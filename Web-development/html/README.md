@@ -4,3 +4,4 @@ set username and email with git to local
 git config --global user.name "your name (you github username)" git config --global user.email "your email(your github email)"
 # MERN-Stack
 1 HTML
+Assignment1 is in html/assignment/task1.html
