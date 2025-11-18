@@ -1,71 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web resume</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandeep Kumar – Python Developer Resume</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --text-color: #333;
+            --card-bg: #fff;
+            --accent: #004d66;
+            --tag-bg: #e0f7fa;
+            --tag-color: #00796b;
+        }
+
+        body.dark {
+            --bg-color: #1e1e1e;
+            --text-color: #ddd;
+            --card-bg: #2c2c2c;
+            --accent: #00bcd4;
+            --tag-bg: #37474f;
+            --tag-color: #80deea;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin: 0;
+        }
+        .myimage{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .subtitle {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            margin-bottom: 30px;
+        }
+
+        .contact span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--accent);
+            border-bottom: 2px solid #ccc;
+            margin-top: 40px;
+            padding-bottom: 5px;
+        }
+
+        .tech-stack span {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            margin: 5px 5px 0 0;
+            border-radius: 5px;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+
+        .company {
+            font-style: italic;
+            color: #777;
+        }
+
+        .date {
+            float: right;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .education li,
+        .projects li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .controls {
+            text-align: right;
+            margin: 10px auto -30px;
+            max-width: 850px;
+        }
+
+        .controls button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            background: var(--accent);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .date {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+
+            .controls {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <table>
-        <tr>
-            <td colspan="4">
-                <a href="https://www.google.com">
-                    <img style="float: left;"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReai8py3m0Pn_PiB7OdhtyRYUxA3a6T9hrYg&s"
-                    alt="goldy pic" />
-                </a>
-            </td>
-            <td colspan="10">
-                <h2><a href="#goldy">Goldy Bhagat</a></h2>
-                <p><i>i <a target="_blank" href="https://www.google.com">❤️</a><strong> webdevelopment</strong></i></p>
+    <div class="controls">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="window.print()">Download PDF</button>
+    </div>
 
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h1>Education :-</h1>
+    <div class="resume-container">
+        <h1>Sandeep Kumar</h1>
+        <div class="subtitle">Python Developer | Backend Engineer</div>
+        <div class="contact">
+            <img src="myimage.png" class="myimage">
+            <span>Email: sandeepkd1824@gmail.com</span>
+            <span>Phone: +91 9464228509</span><br>
+            <span>LinkedIn: linkedin.com/in/manwal-sandeep-09427918b/</span>
+        </div>
 
-    <table border>
+        <h2>Professional Summary</h2>
+        <p>
+            Experienced Python Developer with 6+ years of experience in building scalable APIs, backend automation, and
+            data-driven applications using Django, FastAPI, PostgreSQL, and cloud integrations. Proven track record in
+            delivering efficient, reliable systems for enterprise clients like Volvo. Passionate about clean
+            architecture, performance, and DevOps tooling.
+        </p>
 
+        <h2>Skills & Technologies</h2>
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>FastAPI</span>
+            <span>REST APIs</span>
+            <span>Micro-Services</span>
+            <span>PostgreSQL</span>
+            <span>SQL</span>
+            <span>BigQuery</span>
+            <span>Git</span>
+            <span>Linux</span>
+            <span>AWS S3, SNS, LAMBDA</span>
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Unit Testing</span>
+        </div>
 
-        <tr>
-            <th>cousre</th>
-            <th>university</th>
-            <th>year</th>
-            <th>marks</th>
-        </tr>
-        <tr>
-            <td>BCA</td>
-            <td>GNDU</td>
-            <td>2016</td>
-            <td>70%</td>
-        </tr>
-        <tr>
-            <td>MCA</td>
-            <td>GNDU</td>
-            <td>2020</td>
-            <td>75%</td>
-        </tr>
-    </table> 
-    <h1><a href="https://www.google.com">Experince:</a></h1>
-    
-    <p><i><b>technology analysis</b></i> </p>
-    <ul>
-<li>hgdjlks;fsllfkjgwkkliouidkvnvhuyuhekdkdldjk</li>
-<li>nncskjchsjgjdnssljskghsjhnsjklsjsklshdgshbsnmcsmcskdjcksjdghdhkjghsnshj</li>
-<li>bshcghaisabhghghddbcjdhkgcbsskdchfhkjk....skhcsjdgcsskkls.ndsjcgdshsh.dssjjsdjsjdkjdsjsdcjk</li>
-    </ul>
-    <h2><b>connect with me</b></h2>
-    <p>whatsapp no:6254125545</p>
-    <p>facebook</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero ipsum impedit natus? Assumenda tempora maxime atque veritatis fuga in maiores laborum rerum similique? Voluptate at eligendi delectus quod totam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex a exercitationem molestiae nesciunt optio repudiandae. Facere illo soluta eum ad aliquam ratione, possimus quos quo, amet, minima ut assumenda qui impedit incidunt. Corporis ducimus architecto dolorem velit modi nobis unde eius voluptas doloremque totam ratione nam accusantium, libero error, sed rem nulla similique optio iure, ullam quia repellat? Dignissimos recusandae excepturi sint doloremque adipisci optio, alias explicabo officia vitae, commodi accusamus illo iusto odio non fugit? Impedit ipsa doloremque deleniti tempore dolore quam debitis atque nostrum laboriosam nesciunt quos iusto, doloribus, fugiat incidunt ratione sint earum eos, qui temporibus adipisci animi? Optio nemo tempore eum quae cum ullam repudiandae odio sunt hic debitis, molestias ad saepe, sed blanditiis dignissimos accusantium. Voluptas deserunt maxime commodi dolores eaque rem, consequatur unde iure facilis vel ipsum labore optio assumenda amet tempore dolorum voluptatibus obcaecati rerum. Facere delectus ad dignissimos modi, molestias unde, iste iure dolores doloremque, suscipit porro non optio autem impedit distinctio odit voluptatibus vitae necessitatibus adipisci dolorem! Repudiandae inventore reiciendis, optio consequatur aliquam quas rem blanditiis fuga pariatur aspernatur tenetur iure fugit, atque eius harum vero laborum nisi? Libero quisquam laborum esse provident, aperiam officia numquam, praesentium tempore, aliquid cum vel sed et fuga similique sapiente repellendus eius illo ab dolores suscipit unde expedita ducimus accusamus. Enim dolor vel eaque, facilis dolorum corporis. Sint molestias quia dicta sapiente repudiandae suscipit fuga cupiditate fugiat qui doloremque molestiae culpa quas dolore exercitationem, rem obcaecati adipisci inventore, incidunt libero magni mollitia minus numquam! Aspernatur aperiam, libero officiis rem expedita minima! Quos magni ullam ipsa expedita id dignissimos quisquam! Vel molestiae non dolorum. Ad, quos cum veritatis illo commodi voluptatem nihil eos deserunt doloribus vero quaerat laboriosam odit dolore expedita earum veniam amet voluptates neque? Accusamus voluptatem odio esse, consectetur sed quibusdam amet itaque obcaecati, modi repudiandae cupiditate sint ipsa laboriosam nesciunt deserunt iusto harum non? Minus, veniam voluptatem! Commodi eum saepe rerum quia labore quidem? Perspiciatis sed inventore tenetur odit facere dolorum magni debitis voluptatibus itaque laboriosam nemo aspernatur, vero cum quae illo quaerat sequi in dicta excepturi, sapiente nostrum omnis quo illum. Quae, ex et delectus a, asperiores ratione non nisi nihil nulla natus quaerat nobis tempore alias ipsa rem neque? Commodi fuga incidunt minus odit rerum tempora praesentium perspiciatis. Libero explicabo, possimus aliquam tempora voluptatibus ipsum corporis laudantium ullam incidunt perspiciatis sint modi animi quidem! Architecto quibusdam adipisci accusamus laborum quia dolore laudantium libero temporibus aperiam reprehenderit, doloribus iste suscipit. Maiores, accusantium labore velit temporibus eaque incidunt voluptate deleniti ipsa veniam, fugit laboriosam ad. Aliquid aut, sequi similique ad eaque, a veritatis quasi dolor facere eius provident vitae quos atque porro fugit voluptatum eos sapiente itaque praesentium! Fugit maiores excepturi reiciendis rem accusamus architecto, voluptates non molestias commodi id error numquam harum omnis delectus tenetur iste minus dolore quibusdam? Eaque molestias amet laudantium laborum atque magni magnam rem natus quos. Nostrum ex quas corporis eum exercitationem cupiditate veritatis ab architecto fugiat iure quidem, harum et minima odio molestiae excepturi tempora? Totam?
-    </p>
-    <p>email:<a href="mailto:bhagatgoldy@gmail.com">bhagatgoldy@gmail.com</a></p>
-<a href="./list.html">list page</a>
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <div class="job-title">Backend Developer <span class="date">Jun 2019 – Present</span></div>
+            <div class="company">IO Datalabs, Mohali</div>
+            <ul>
+                <li>Led backend engineering for Volvo’s product platform, ensuring uptime and performance at scale.</li>
+                <li>Built secure AWS S3 upload flows using signed URLs and implemented role-based access using JWT.</li>
+                <li>Developed real-time notification systems via email, SMS, and in-app messages using event-driven
+                    design.</li>
+                <li>Wrote Python scripts to auto-update DB records and export filtered data as downloadable CSVs.</li>
+                <li>Designed BigQuery-based reporting pipelines for client dashboards and monthly KPIs.</li>
+                <li>Improved database performance by indexing and optimizing PostgreSQL queries and views.</li>
+                <li>Jinja template email and pdf generation for dynamic content rendering.</li>
+            </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li><strong>Data Automation Scripts:</strong> Scheduled Python scripts to sync, update, and clean datasets
+                in production tables.</li>
+            <li><strong>AWS File Uploader:</strong> Django + FastAPI-based secure upload system using signed S3 URLs.
+            </li>
+            <li><strong>CSV Export Module:</strong> Created custom API endpoints to filter, format, and download
+                datasets as CSV.</li>
+            <li><strong>BigQuery Reporting Tool:</strong> Connected production data to BigQuery and visualized business
+                reports.</li>
+            <li><strong>Notification System:</strong> Built async notification module for alerts and user engagement.
+            </li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul class="education">
+            <li><strong>B.C.A</strong> – Guru Nanak Dev University, 2018</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <ul>
+            <!-- <li>Python for Everybody – Coursera</li> -->
+            <li>Backend Development with Django – Sach-tech solutions</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
 </body>
 
 </html>
