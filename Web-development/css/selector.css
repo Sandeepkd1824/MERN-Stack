@@ -1,0 +1,61 @@
+/* selector syntax */
+/* selector type{
+propertykey: properrtyvalue;
+} */
+ /* Element Selector */
+ /* p{
+    background-color: red;
+    color: aliceblue;
+ }
+ h1{
+    background-color:yellowgreen;
+ } */
+
+ /*ID Selector  */
+ /* #pId,#pId{
+color: brown;
+ }
+ #h1Id{
+   background-color: aqua;
+ } */
+
+ /* Class Selector */
+/* .pClass{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+/* Specificity order */
+/* <<Id <<class <<P */
+
+/* Nested Selector */
+ 
+/* #pId{
+   color: red;
+}
+.pClass{
+   color: yellow;
+}
+p{
+   color: blue;
+} */
+
+/* Universal Selector */
+
+/* *{
+   color: red;
+   font-family: inherit;
+} */
+
+/* Descendant Selector */
+/* #decsel p{
+   font-style: italic;
+}
+#decsel p{
+   background-color: bisque;
+} */
+
+#dirsel >p{
+   color:yellowgreen;
+   font-style: italic;
+   background-color: blueviolet;
+}
